@@ -17,6 +17,8 @@ This zip-file contains two ESRI Shapefiles (vector-data) - the first one named "
 
 ![Figure 1: Files contained in the zipped file for Tutorial 2](Figure_01.png)
 
+**Figure 1: Files contained in the zipped file for Tutorial 2**
+
 Both shapefiles consist of several data files as shown in Figure 1. You will learn why a single shapefile consists of multiple datafiles later on in the course.
 
 ## 1 Loading a Shapefile (vector file) in QGIS
@@ -26,9 +28,13 @@ Then we can open the file "**gis.osm_landuse_a_free_1.shp**" by **simply draggin
 
 ![Figure 2: Openning a Shapefile in QGIS](Figure_02.png)
 
+**Figure 2: Openning a Shapefile in QGIS**
+
 This will open the selected shapefile and automatically display it in the main window of QGIS (Section 1 in Figure 1). You should now see something similar to Figure 3. The colours will most likely differ from the ones displayed in Figure 3 as QGIS randomly assigns a colour to each newly loaded shapefile (vector file). How colours can be adapted and how the attributes stored in shapefiles can be used to colour-code and format individual spatial objects (polygons, lines, points) will be explained in the next section.
 
 ![Figure 3: After opening the shapefile in QGIS](Figure_03.png)
+
+**Figure 3: After opening the shapefile in QGIS**
 
 ## Basic visualization of Shapefiles in QGIS
 
@@ -37,9 +43,14 @@ either **double click the entry of the shapefile-layer in the layer window of Q
 
 ![Figure 4: Double-click the Shapefile layer](Figure_03.png)
 
+**Figure 4: Double-click the Shapefile layer**
+
 This will open a new window as displayed in Figure 5 with many functionalities. In this tutorial we will focus on the options to adapt the visualization settings of the vector file. **To open the corresponding tab in the window select the tab "Symbology"** (the corresponding tab may have also been opened as standard setting). 
 
 ![Figure 5: The properties window with the "Symbology" tab activated. The latter allows to modify the the visual appearance of the vector file in numerous ways](Fig_03.png)
+
+**The properties window with the "Symbology" tab activated. The latter allows to modify the the visual appearance of the vector file in numerous ways**
+
 We will now explore five options to adapt the visual appearance of the shapefile. Everytime we conducted a change and want to see the effects on the visualization in the main QGIS window we have to first confirm our choice by clicking "apply" and then press "ok" to close the "properties" dialogue window. We can later return to the properties dialogue by repeating the steps described above, that is by double-clicking the shapefile-layer as indicated in Figure 4 or by performing a right-click and selecting "Properties". The first adaptation that we will try out is to change the colour of the whole Shapefile. In order to do this
 
 **first click the area marked with "1" in Figure 6. This will change the available options in the tab. Then click "Fill color"-area marked with "2". A new window will open from which you can select any colour you want. Select a colour, press "OK", then "Apply" and "OK" again.** 
@@ -48,11 +59,15 @@ You will see that the colour of the shapefile has changed to the colour you sel
 
 ![Figure 6: Changing the colour of the complete shapefile ](Figure_06.png)
 
+**Figure 6: Changing the colour of the complete shapefile**
+
 As a second option we will explore how to not only assign a new colour but also change the style and colour of the outline and the filling of the polygons. to change the fill-style of the polygons
 
 **we first click the area named "Fill" and marked with 1 in Figure 7. Then we can select any fill type we want from the list of option provided below. We could for example select a quite complex pattern such as the one marked with 6. Then, we can further customize the pattern of the filling and also the outline of each polygon by clicking through the areas marked with 2, 3, 4 and 5 and modify colors or line widths etc.**
 
 ![Figure 7: Changing the fill pattern and the colour of the outline of the shapefile ](Figure_07.png)
+
+**Figure 7: Changing the fill pattern and the colour of the outline of the shapefile **
 
 Please try out a few different settings and have a look how they affect the visualization in the main windows after you pressed the "apply" button and closed the "properties" dialogue by clicking "OK".
 
@@ -66,9 +81,14 @@ To make sound use of the information stored in the attribute table, we need to 
 **right-clicking on the shapefile-layer and selecting "Open Attribute Table" as demonstrated in Figure 8**
 
 ![Figure 8: Opening the attribute table of the shapefile ](Figure_08.png)
+
+**Figure 8: Opening the attribute table of the shapefile**
+
 This will open the attribute table of the Shapele in a new window. The window will approximately look like the window shown in Figure 9.
 
-![Figure 9: The attribute table of the gis.osm landuse a free 1 Shapefile ](Figure_09.png)
+![Figure 9: The attribute table of the gis.osm landuse a free 1 Shapefile ](Figure_09.png)
+
+**Figure 9: The attribute table of the gis.osm landuse a free 1 Shapefile**
 
 As you can see there are four columns available in the attribute table of our Shapele: "osm id", "code", "fclass" and "name". Here, the osm id is a unique identifier number assigned by the Open Street Map system which is
 the data source for our Shapefile. This identifier makes each object in a given Open Street Map dataset clearly identifiable. The code "field" shows a land cover code for each object in the Shapefile. It basically is a numeric description of the next field "fclass" where a descriptive term for the land cover type is given. In Figure 9 you can for example see that all polygons assigned to the class "park" have the code "7202". Finally, there is another column called name which indicates an official name for the given polygon. For example the name of a park or a cemetery. In the next step, we will now make use of the information stored in the fclass column to assign meaningful colours to the individual land cover classes. In order to do this
@@ -78,11 +98,17 @@ column from the attribute table which we want to use to colour-code our spatial 
 
 ![Figure 10: Colour-code the polygons of the Shapefile using the attribute table ](Figure_10.png)
 
+**Figure 10: Colour-code the polygons of the Shapefile using the attribute table**
+
 This will lead to a situation similar to the one depicted in Figure 11. The colours are again likely to be dierent as QGIS selects the colours randomly. We can now assign meaningful colours to each of the land-cover types by **double-clicking any of the colour boxes marked in Figure 11. In the new pop-up dialogue we can assign a new colour and also make more detailed changes to the format of the filling and the outlines by selecting "simple fill" and use the then appearing properties as shown in Figure 12**.
 
 ![Figure 11: Visualization options for displaying categories ](Figure_11.png)
 
+**Figure 11: Visualization options for displaying categories**
+
 ![Figure 12: Colour and format selection for each land cover class ](Figure_12.png)
+
+**Figure 12: Colour and format selection for each land cover class**
 
 You should now be able to load and visualize a Shapefile by either changing the style for the whole Shapefile or classify and colour-code the spatial objects of the Shapefile to some discrete classes using information given in
 the attribute table. In the exercise of this Tutorial, you will find out how it is possible to colour-code the spatial objects of a Shapefile using attribute table information from an attribute with continuous values.
@@ -95,6 +121,7 @@ selecting "Project" -> "Save as..." from the main file menu of QGIS as shown in 
 
 ![Figure 13: Saving a QGIS project ](Figure_13.png)
 
+**Figure 13: Saving a QGIS project**
 
 After storing the project file it is possible to re-load the status of your QGIS project in the future by selecting "Project" -> "open" from the main file menu and then navigating to the ".qgz" file that you have stored earlier.
 Alternatively, you can also double-click this file in the Windows Explorer (or similar data explorer apps in Linux or MacOS environments). This will automatically load QGIS and the project. It is important to understand, that the QGIS project-files themselves do not contain any geodata. Project files only store links to the data which are
@@ -118,3 +145,4 @@ General advice: Don't be shy to try out a few different options and settings!! T
 
 ![Figure 14: Save current map view as image ](Fig_14.png)
 
+**Figure 14: Save current map view as image**
