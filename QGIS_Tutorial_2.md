@@ -3,7 +3,7 @@
 ## Tutorial 2 - Loading and visualizing Shapefiles / Vector data
 
 **Abstract** 
-After completing this tutorial, the participant knows how to load a Shapele (vector le) and how to make use of the visualization options in QGIS to adapt the colours, symbols and format of the spatial features (points, lines, polygons) contained in the shapele. You will additionally learn how to save a QGIS project.
+After completing this tutorial, the participant knows how to load a Shapele (vectorfile) and how to make use of the visualization options in QGIS to adapt the colours, symbols and format of the spatial features (points, lines, polygons) contained in the shapele. You will additionally learn how to save a QGIS project.
 
 Developed with QGIS version - Bialowieza 3.22.5
 
