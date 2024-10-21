@@ -30,7 +30,7 @@ Then we can open the file "**gis.osm_landuse_a_free_1.shp**" by **simply draggin
 
 **Figure 2: Openning a Shapefile in QGIS**
 
-This will open the selected shapefile and automatically display it in the main window of QGIS (Section 1 in Figure 1). You should now see something similar to Figure 3. The colours will most likely differ from the ones displayed in Figure 3 as QGIS randomly assigns a colour to each newly loaded shapefile (vector file). How colours can be adapted and how the attributes stored in shapefiles can be used to colour-code and format individual spatial objects (polygons, lines, points) will be explained in the next section.
+This will open the selected shapefile and automatically display it in the main window of QGIS (Section 1 in Figure 1). You should now see something similar to Figure 3. The colours will most likely differ from the ones displayed in Figure 3 as QGIS randomly assigns a colour to each newly loaded shapefile (vector file). How colours can be adapted and how the attributes stored in shapefiles can be used to colour-code and format individual spatial objects (polygons, lines, points) will be explained in the next section.
 
 ![Figure 3: After opening the shapefile in QGIS](Figure_03.png)
 
